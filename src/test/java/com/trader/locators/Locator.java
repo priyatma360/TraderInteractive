@@ -51,7 +51,8 @@ public class Locator {
 	 */
 	public enum Menus {
 		More_HamburgerButton("//div[@id='hamburgerButton']"), 
-		MyTrader_SignIn("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Sign In']"), 
+		MyTrader_SignIn("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Sign In']"),
+		MyTrader_MyTraderAccount("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Edit My Motorcycle']"),
 		SignOut_MyTrader("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Sign Out']"),
 		BUY("//*[@id='page-content-wrapper']//nav//a[contains(@href,'-for-sale')]"),
 		Sell_For_Free("//*[@id='page-content-wrapper']//nav//a[contains(text(),'Sell')]"),

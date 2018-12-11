@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="91835" started-at="2018-12-06T09:17:14Z" finished-at="2018-12-06T09:18:46Z">
+  <suite name="Default suite" duration-ms="110404" started-at="2018-12-11T10:43:55Z" finished-at="2018-12-11T10:45:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="91835" started-at="2018-12-06T09:17:14Z" finished-at="2018-12-06T09:18:46Z">
-      <class name="com.trader.scripts.LoginPage">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.LoginPage@76b10754]" name="setUp" is-config="true" duration-ms="5459" started-at="2018-12-06T09:17:14Z" finished-at="2018-12-06T09:17:19Z">
+    <test name="Default test" duration-ms="110404" started-at="2018-12-11T10:43:55Z" finished-at="2018-12-11T10:45:45Z">
+      <class name="com.trader.scripts.MyTrader">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.MyTrader@50de0926]" name="setUp" is-config="true" duration-ms="9717" started-at="2018-12-11T10:43:55Z" finished-at="2018-12-11T10:44:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.trader.scripts.LoginPage.assertErrorMessageForGoogleInvalidLoginAtGooglePopUp()]]>
+                <![CDATA[public void com.trader.scripts.MyTrader.assertMyTraderLogInpage()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="assertErrorMessageForGoogleInvalidLoginAtGooglePopUp()[pri:0, instance:com.trader.scripts.LoginPage@76b10754]" name="assertErrorMessageForGoogleInvalidLoginAtGooglePopUp" duration-ms="84889" started-at="2018-12-06T09:17:19Z" finished-at="2018-12-06T09:18:44Z">
+        <test-method status="PASS" signature="assertMyTraderLogInpage()[pri:0, instance:com.trader.scripts.MyTrader@50de0926]" name="assertMyTraderLogInpage" duration-ms="99953" started-at="2018-12-11T10:44:04Z" finished-at="2018-12-11T10:45:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertErrorMessageForGoogleInvalidLoginAtGooglePopUp -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.LoginPage@76b10754]" name="tearDown" is-config="true" duration-ms="1445" started-at="2018-12-06T09:18:44Z" finished-at="2018-12-06T09:18:46Z">
+        </test-method> <!-- assertMyTraderLogInpage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.MyTrader@50de0926]" name="tearDown" is-config="true" duration-ms="715" started-at="2018-12-11T10:45:44Z" finished-at="2018-12-11T10:45:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=assertErrorMessageForGoogleInvalidLoginAtGooglePopUp status=SUCCESS method=LoginPage.assertErrorMessageForGoogleInvalidLoginAtGooglePopUp()[pri:0, instance:com.trader.scripts.LoginPage@76b10754] output={null}]]]>
+                <![CDATA[[TestResult name=assertMyTraderLogInpage status=SUCCESS method=MyTrader.assertMyTraderLogInpage()[pri:0, instance:com.trader.scripts.MyTrader@50de0926] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.trader.scripts.LoginPage -->
+      </class> <!-- com.trader.scripts.MyTrader -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
