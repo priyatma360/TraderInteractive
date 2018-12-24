@@ -80,8 +80,8 @@ public class Locator {
 		Race_Team_Link("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Race Team']"),
 		News_Link("//*[@id='sidebar-wrapper']//a/li[contains(text(),'News')]"),
 		Feedback_Link("//*[@id='wrapper']//a[@data-track='Sidebar Nav - Web Site Feedback']"),
-		Need_help_Link("//*[@id='wrapper']//a[@data-track='Sidebar Nav - Need Help']");
-		
+		Need_help_Link("//*[@id='wrapper']//a[@data-track='Sidebar Nav - Need Help']"),
+		MyTrader_Account("//*[@id='sidebar-wrapper']/ul/li[11]/a");
 
 		public String value;
 
