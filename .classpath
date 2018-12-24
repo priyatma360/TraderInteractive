@@ -22,5 +22,14 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/shivanis/.m2/repository/com/google/android/tools/dx/1.7/dx-1.7.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.google.android.tools"/>
+			<attribute name="maven.artifactId" value="dx"/>
+			<attribute name="maven.version" value="1.7"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

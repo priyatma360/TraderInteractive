@@ -52,7 +52,6 @@ public class Locator {
 	public enum Menus {
 		More_HamburgerButton("//div[@id='hamburgerButton']"), 
 		MyTrader_SignIn("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Sign In']"),
-		MyTrader_MyTraderAccount("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Edit My Motorcycle']"),
 		SignOut_MyTrader("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Sign Out']"),
 		BUY("//*[@id='page-content-wrapper']//nav//a[contains(@href,'-for-sale')]"),
 		Sell_For_Free("//*[@id='page-content-wrapper']//nav//a[contains(text(),'Sell')]"),
@@ -81,8 +80,8 @@ public class Locator {
 		Race_Team_Link("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Race Team']"),
 		News_Link("//*[@id='sidebar-wrapper']//a/li[contains(text(),'News')]"),
 		Feedback_Link("//*[@id='wrapper']//a[@data-track='Sidebar Nav - Web Site Feedback']"),
-		Need_help_Link("//*[@id='wrapper']//a[@data-track='Sidebar Nav - Need Help']");
-		
+		Need_help_Link("//*[@id='wrapper']//a[@data-track='Sidebar Nav - Need Help']"),
+		MyTrader_MyTraderAccount("//*[@id='sidebar-wrapper']/ul/li[11]/a");
 
 		public String value;
 
@@ -112,15 +111,18 @@ public class Locator {
 		Last_Name("//*[@id='lastName']"),
 		Save_Changes_Button("//*[@id='submitAccountInfo']"),
 		Updated_Changes_Messages("//*[@id='mytAccountForm']//p[contains(text(),'Updated')]"),
-		MyTrader_Info_Page("//*[@id='page-content-wrapper']//*[contains(text(),'MyTrader Information')]");
-
+		MyTrader_Info_Page("//*[@id='page-content-wrapper']//*[contains(text(),'MyTrader Information')]"),
+		My_Listings("//*[@class='myt-nav-container']//li/a[@title='My Listings']"),
+		My_Listings_Section("//*[@id='page-content-wrapper']//div[3]//a[contains(text(),'My Listings')]");
+		
 		public String value;
 
 		private MyTrader(String value) {
 			this.value = value;
-		}
+	
 	}
-
+      
+	}		
 	/**
 	 * Locators related to Home page.
 	 *
@@ -587,4 +589,5 @@ public class Locator {
 			this.value = value;
 		}
 	}
+	
 }

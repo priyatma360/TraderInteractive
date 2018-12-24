@@ -278,6 +278,16 @@ public class TraderMenus extends DriverHelper {
 			locator = "//*[@id='sidebar-wrapper']/ul/a[contains(text(),'" + hamburgerLinks + "')]";
 	}
 	
+	/**
+	 * This method is used to click on My Trader Account link in menu.
+	 */
+	public void clickOnMyTraderAccount() {
+		print("Click On My Trader Account link");
+		waitForElementPresentInDom(1);
+		locator = Locator.Menus.MyTrader_MyTraderAccount.value;
+		clickOn(locator);
+	}
+	
 	@SuppressWarnings("unused")
 	public void testMethod() {
 		print("Hamburger List");
