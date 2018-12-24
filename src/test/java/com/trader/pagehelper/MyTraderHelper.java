@@ -122,4 +122,66 @@ public class MyTraderHelper extends DriverHelper {
 		locator = Locator.MyTrader.Updated_Changes_Messages.value;
 		Assert.assertTrue(isElementPresent(locator));
 	}
+	
+	 /**
+	   * Assert My Listings link under MyTrader.
+	   */
+	public void assertMyListings() {
+	      print("My Listings");
+	      locator = Locator.MyTrader.My_Listings.value;
+	      Assert.assertTrue(isElementPresent(locator));
+	}
+	
+	/**
+	 * Assert Saved Listing link under MyTrader.
+	 */
+	public void assertSavedListing() {
+	print("Saved Listing");
+	locator = Locator.MyTrader.Saved_Listing.value;
+    Assert.assertTrue(isElementPresent(locator));
+	}
+	
+	/**
+	 * Assert Saved Searches link under MyTrader.
+	 */
+	public void assertSavedSearches() {
+	print("Saved Searches");
+	locator = Locator.MyTrader.Saved_Searches.value;
+    Assert.assertTrue(isElementPresent(locator));
+	}
+	
+	/**
+	 * Assert Sell A Motorcycle link under MyTrader.
+	 */
+	public void assertSellAMotorcycle() {
+	print("Sell A Motorcycle");
+	locator = Locator.MyTrader.Sell_A_Motorcycle.value;
+    Assert.assertTrue(isElementPresent(locator));
+	}
+	
+	
+	/**
+	 * Assert Account Settings link under MyTrader.
+	 */
+	public void assertAccountSettings() {
+	print("Account Settings");
+	locator = Locator.MyTrader.Account_Setting.value;
+    Assert.assertTrue(isElementPresent(locator));
+	}
+	
+	/**
+	 * Assert My Listings section under MyTrader.
+	 */
+	public void assertMyListingssection() {
+	print("Assert My Listings section");
+	locator = Locator.MyTrader.My_Listings_Section.value;
+    Assert.assertTrue(isElementPresent(locator));
+	}
+	
+	/**
+	 * Assert All posted Ad links for that Account.
+	 */
+	
+
+	
 }

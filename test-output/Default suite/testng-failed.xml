@@ -6,7 +6,7 @@
       <class name="com.trader.scripts.MyTrader">
         <methods>
           <include name="tearDown"/>
-          <include name="assertMyTraderLogInpage"/>
+          <include name="assertSectionsAtMyTraderPage"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.trader.scripts.MyTrader -->
