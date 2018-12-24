@@ -7,7 +7,7 @@ import com.trader.utils.DriverTestCase;
 public class MyTrader extends DriverTestCase {
 
 	/**
-	 * MyTrader page is displayed when click on MyTrader Account link from Menu.
+	 * Test_01: MyTrader page is displayed when click on MyTrader Account link from Menu.
 	 */
 	@Test
 	public void assertMyTraderLogInpage() {
