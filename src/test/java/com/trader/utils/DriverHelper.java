@@ -176,7 +176,7 @@ public class DriverHelper extends DriverTestCase {
 	 * Checks a checkbox
 	 * 
 	 * @param labelText
-	 *            - Text should match with the text dispalyed in application
+	 *            - Text should match with the text displayed in application
 	 * @param doWait
 	 */
 	public void toggleCheckBox(String labelText, Boolean doWait) {

@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.trader.scripts.LoginPage">
+      <class name="com.trader.scripts.PostListingPage">
         <methods>
-          <include name="assertGoogleLoginPopUpAtLoginPage"/>
+          <include name="assertTestimonialsectionwithTestimonials"/>
           <include name="tearDown"/>
+          <include name="clickonReadMoreCustomerReviewsUnderTestimonialsSection"/>
           <include name="setUp"/>
+          <include name="clickonSellYourMotorcycleAndAssertSellYourMotorcycle"/>
         </methods>
-      </class> <!-- com.trader.scripts.LoginPage -->
+      </class> <!-- com.trader.scripts.PostListingPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

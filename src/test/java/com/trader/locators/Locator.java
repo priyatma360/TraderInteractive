@@ -80,8 +80,10 @@ public class Locator {
 		Race_Team_Link("//*[@id='sidebar-wrapper']//a[@data-track='Sidebar Nav - Race Team']"),
 		News_Link("//*[@id='sidebar-wrapper']//a/li[contains(text(),'News')]"),
 		Feedback_Link("//*[@id='wrapper']//a[@data-track='Sidebar Nav - Web Site Feedback']"),
-		Need_help_Link("//*[@id='wrapper']//a[@data-track='Sidebar Nav - Need Help']");
-		
+		Need_help_Link("//*[@id='wrapper']//a[@data-track='Sidebar Nav - Need Help']"),
+		Sell_Your_Motorcycle_Button("(//*[@id='additional-info-sell']//a)[1]"),
+		Edit_Motocycle("(//*[@id='additional-info-sell']//a)[2]"),
+		Cross_Icon("//div[@id='additional-info-sell']//*[contains(@class,'nav-close-btn')]");
 
 		public String value;
 
@@ -423,9 +425,9 @@ public class Locator {
 		Sell_Your_Motorcycle("//div[@id='additional-info-sell']//a[@class='btn btn-primary btn-lg center']"),
 		Have_Listing("//*[@id='sellCont']//div[2]/a"),
 		Sell_Your_Motocycle_Page("//*[@id='sellCont']//*[contains(text(),'Sell your')]"),
-		Select_Free_Button("//*[@id='packageAnchor']//tbody//a[contains(text(),'Select Free')]"),
-		Select_Enhanced_Button("//*[@id='packageAnchor']//tbody//a[contains(text(),'Select Enhanced')]"),
-		Select_Best_Button("//*[@id='packageAnchor']//tbody//a[contains(text(),'Select Best')]"),
+		Select_Free_Button("//a[contains(text(),'Select Free') and @class='btn btn-primary']"),
+		Select_Enhanced_Button("//a[contains(text(),'Select Enhanced') and @class='btn btn-primary']"),
+		Select_Best_Button("//a[contains(text(),'Select Best') and @class='btn btn-primary']"),
 		Select_Class("//*[@id='class']"),
 		Select_Year("//*[@id='year']"),
 		Select_Make("//*[@id='make']"),
@@ -448,8 +450,15 @@ public class Locator {
 		Listing_Confirmation("//div[@id='sellCont']//*[@id='title']"),
 		Message_iFrame("//iframe[@id='description_ifr']"),
 		CouponCode_Field("//input[@id='promoCode']"),
-		Apply_Coupon_Code("//*[@id='checkPromoCode']");
-
+		Apply_Coupon_Code("//*[@id='checkPromoCode']"),
+		Free_Section("//*[@id='table-with-3']//tbody//tr[1]//td[2]"),
+		Enchanced_Section("//*[@id='table-with-3']//tbody//tr[1]//td[3]"),
+		Best_Section("//*[@id='table-with-3']//tbody//tr[1]//td[4]"),
+		Testimonials_Section("//*[@class='center sell-promo']//h2"),
+		Testimonials_Descripation("//*[@class='center sell-promo']//ul"),
+		ReadMoreCustomerReviews_Button("//a[contains(text(),'Read More Customer Reviews') and @class='btn btn-large btn-blank margin-top20']"),
+		Testimonial_Page("//*[@id='testimonialCont']//div//h1");
+		
 		public String value;
 
 		private Sell(String value) {
@@ -586,4 +595,6 @@ public class Locator {
 			this.value = value;
 		}
 	}
+	
+	
 }

@@ -93,12 +93,12 @@ public class DriverTestCase {
 
 	@BeforeMethod(alwaysRun = true)
 	public void setUp(Method testMethod) throws Exception {
-		uname = propertyReader.readApplicationFile("UName");
-		password = propertyReader.readApplicationFile("PWD");
+//		uname = propertyReader.readApplicationFile("UName");
+//		password = propertyReader.readApplicationFile("PWD");
 		String browser = propertyReader.readApplicationFile("BROWSER");
 
 		// used by a couple of tests
-		testName = testMethod.getName();
+//		testName = testMethod.getName();
 
 		// Removed the skip parameters from the setup method since we haven't used these
 		// in ages.
@@ -233,7 +233,7 @@ public class DriverTestCase {
 			ExecutionLog.Log("open application url: " + applicationUrl);
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
+		}	
 	}
 
 	public void OpenURL(String URL) {

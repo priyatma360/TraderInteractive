@@ -1,39 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="91835" started-at="2018-12-06T09:17:14Z" finished-at="2018-12-06T09:18:46Z">
+  <suite name="Default suite" duration-ms="231296" started-at="2018-12-24T11:24:37Z" finished-at="2018-12-24T11:28:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="91835" started-at="2018-12-06T09:17:14Z" finished-at="2018-12-06T09:18:46Z">
-      <class name="com.trader.scripts.LoginPage">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.LoginPage@76b10754]" name="setUp" is-config="true" duration-ms="5459" started-at="2018-12-06T09:17:14Z" finished-at="2018-12-06T09:17:19Z">
+    <test name="Default test" duration-ms="231296" started-at="2018-12-24T11:24:37Z" finished-at="2018-12-24T11:28:28Z">
+      <class name="com.trader.scripts.PostListingPage">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="setUp" is-config="true" duration-ms="3807" started-at="2018-12-24T11:24:37Z" finished-at="2018-12-24T11:24:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.trader.scripts.LoginPage.assertErrorMessageForGoogleInvalidLoginAtGooglePopUp()]]>
+                <![CDATA[public void com.trader.scripts.PostListingPage.assertButtonOnSellYourMotorcycle()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="assertErrorMessageForGoogleInvalidLoginAtGooglePopUp()[pri:0, instance:com.trader.scripts.LoginPage@76b10754]" name="assertErrorMessageForGoogleInvalidLoginAtGooglePopUp" duration-ms="84889" started-at="2018-12-06T09:17:19Z" finished-at="2018-12-06T09:18:44Z">
+        <test-method status="PASS" signature="assertButtonOnSellYourMotorcycle()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="assertButtonOnSellYourMotorcycle" duration-ms="46261" started-at="2018-12-24T11:24:41Z" finished-at="2018-12-24T11:25:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- assertErrorMessageForGoogleInvalidLoginAtGooglePopUp -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.LoginPage@76b10754]" name="tearDown" is-config="true" duration-ms="1445" started-at="2018-12-06T09:18:44Z" finished-at="2018-12-06T09:18:46Z">
+        </test-method> <!-- assertButtonOnSellYourMotorcycle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="tearDown" is-config="true" duration-ms="712" started-at="2018-12-24T11:25:27Z" finished-at="2018-12-24T11:25:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=assertErrorMessageForGoogleInvalidLoginAtGooglePopUp status=SUCCESS method=LoginPage.assertErrorMessageForGoogleInvalidLoginAtGooglePopUp()[pri:0, instance:com.trader.scripts.LoginPage@76b10754] output={null}]]]>
+                <![CDATA[[TestResult name=assertButtonOnSellYourMotorcycle status=SUCCESS method=PostListingPage.assertButtonOnSellYourMotorcycle()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.trader.scripts.LoginPage -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="setUp" is-config="true" duration-ms="3298" started-at="2018-12-24T11:25:28Z" finished-at="2018-12-24T11:25:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.trader.scripts.PostListingPage.assertButtonsIcon()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="assertButtonsIcon()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="assertButtonsIcon" duration-ms="19018" started-at="2018-12-24T11:25:31Z" finished-at="2018-12-24T11:25:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertButtonsIcon -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="tearDown" is-config="true" duration-ms="671" started-at="2018-12-24T11:25:50Z" finished-at="2018-12-24T11:25:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assertButtonsIcon status=SUCCESS method=PostListingPage.assertButtonsIcon()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="setUp" is-config="true" duration-ms="3306" started-at="2018-12-24T11:25:51Z" finished-at="2018-12-24T11:25:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.trader.scripts.PostListingPage.assertTestimonialsectionwithTestimonials()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="assertTestimonialsectionwithTestimonials()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="assertTestimonialsectionwithTestimonials" duration-ms="46142" started-at="2018-12-24T11:25:54Z" finished-at="2018-12-24T11:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertTestimonialsectionwithTestimonials -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="tearDown" is-config="true" duration-ms="703" started-at="2018-12-24T11:26:40Z" finished-at="2018-12-24T11:26:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=assertTestimonialsectionwithTestimonials status=SUCCESS method=PostListingPage.assertTestimonialsectionwithTestimonials()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="setUp" is-config="true" duration-ms="3298" started-at="2018-12-24T11:26:41Z" finished-at="2018-12-24T11:26:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.trader.scripts.PostListingPage.clickonReadMoreCustomerReviewsUnderTestimonialsSection()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickonReadMoreCustomerReviewsUnderTestimonialsSection()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="clickonReadMoreCustomerReviewsUnderTestimonialsSection" duration-ms="58288" started-at="2018-12-24T11:26:44Z" finished-at="2018-12-24T11:27:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonReadMoreCustomerReviewsUnderTestimonialsSection -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="tearDown" is-config="true" duration-ms="700" started-at="2018-12-24T11:27:42Z" finished-at="2018-12-24T11:27:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickonReadMoreCustomerReviewsUnderTestimonialsSection status=SUCCESS method=PostListingPage.clickonReadMoreCustomerReviewsUnderTestimonialsSection()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="setUp" is-config="true" duration-ms="3294" started-at="2018-12-24T11:27:43Z" finished-at="2018-12-24T11:27:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.trader.scripts.PostListingPage.clickonSellYourMotorcycleAndAssertSellYourMotorcycle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickonSellYourMotorcycleAndAssertSellYourMotorcycle()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="clickonSellYourMotorcycleAndAssertSellYourMotorcycle" duration-ms="41012" started-at="2018-12-24T11:27:46Z" finished-at="2018-12-24T11:28:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonSellYourMotorcycleAndAssertSellYourMotorcycle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.PostListingPage@50de0926]" name="tearDown" is-config="true" duration-ms="761" started-at="2018-12-24T11:28:27Z" finished-at="2018-12-24T11:28:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=clickonSellYourMotorcycleAndAssertSellYourMotorcycle status=SUCCESS method=PostListingPage.clickonSellYourMotorcycleAndAssertSellYourMotorcycle()[pri:0, instance:com.trader.scripts.PostListingPage@50de0926] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.trader.scripts.PostListingPage -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

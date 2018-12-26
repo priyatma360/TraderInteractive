@@ -12,14 +12,14 @@ public class SellYourMotorcycleHelper extends DriverHelper {
 	public SellYourMotorcycleHelper(WebDriver driver) {
 		super(driver, getSoftAssert());
 	}
-	
+
 	/**
 	 * Click On Sell For Free Menu And Assert Result Page
 	 */
 	public void clickOnSellForFreeMenuAndAssertResultPage() {
 		print("Click On Sell For Free Menu And Assert Result Page");
 		waitForElementPresentInDom(2);
-		locator=Locator.Menus.Sell_For_Free.value;
+		locator = Locator.Menus.Sell_For_Free.value;
 		clickOn(locator);
 		print("Click on Sell Motorcycle button");
 		waitForElementPresentInDom(5);
@@ -75,7 +75,7 @@ public class SellYourMotorcycleHelper extends DriverHelper {
 	}
 
 	/**
-	 * Select Motocycle Class in Class drop down
+	 * Select Motorcycle Class in Class drop down
 	 */
 	public void selectMotorCycleClass() {
 		print("Select Motocycle Class in Class drop down");
@@ -362,4 +362,83 @@ public class SellYourMotorcycleHelper extends DriverHelper {
 		this.enterCouponCodeAndClickOnApplyButton();
 		this.clickOnCheckoutButton();
 	}
+
+	/**
+	 * Assert Sell Your Motorcycle, Edit Your Listing and Cross(X) icon and buttons
+	 * are displayed at pop up when click on Sell For Free' link in header at home
+	 * page
+	 */
+
+	public void clickOnSellForFreeMenuAndAssertButtonsIconOnPopup() {
+		print("Click on Sell For Free drop down menu");
+		clickOn(Locator.Menus.Sell_For_Free.value);
+		waitForElementPresentInDom(1);
+		print("Assert Sell Motorcycle Button on Sell for Free drop down");
+		String sellMotorcycle = Locator.Menus.Sell_Your_Motorcycle_Button.value;
+		Assert.assertTrue(isElementPresent(sellMotorcycle));
+		print("Assert Edit Button on Sell for Free drop down");
+		String editMotorcycle = Locator.Menus.Edit_Motocycle.value;
+		Assert.assertTrue(isElementPresent(editMotorcycle));
+		print("Assert Cross Icon on Sell for Free drop down");
+		String crossIcon = Locator.Menus.Cross_Icon.value;
+		Assert.assertTrue(isElementPresent(crossIcon));
+	}
+
+	/**
+	 * Assert FREE, ENHANCED, BEST, Select Free , Select Enhanced , Select Best
+	 * package options and buttons are displayed under View Our Package Options at
+	 * 'Sell your Trader fast, free & secure' page.
+	 */
+	public void assertFreeEnchancedBestSectionAndButtons() {
+		print("Assert Free under View Our Package Options at Sell Motorcycle Page");
+		String editSectionText = Locator.Sell.Free_Section.value;
+		Assert.assertTrue(isElementPresent(editSectionText));
+		print("Assert Enchanced under View Our Package Options at Sell Motorcycle Page");
+		String enchancedSection = Locator.Sell.Enchanced_Section.value;
+		Assert.assertTrue(isElementPresent(enchancedSection));
+		print("Assert Best under View Our Package Options at Sell Motorcycle Page");
+		String bestSection = Locator.Sell.Best_Section.value;
+		Assert.assertTrue(isElementPresent(bestSection));
+		print("Assert Free under View Our Package Options at Sell Motorcycle Page");
+		String selecFreeButton = Locator.Sell.Select_Free_Button.value;
+		Assert.assertTrue(isElementPresent(selecFreeButton));
+		print("Assert Enchanced under View Our Package Options at Sell Motorcycle Page");
+		String selecEnchanedButton = Locator.Sell.Select_Enhanced_Button.value;
+		Assert.assertTrue(isElementPresent(selecEnchanedButton));
+		print("Assert Best under View Our Package Options at Sell Motorcycle Page");
+		String selecBestButton = Locator.Sell.Select_Best_Button.value;
+		Assert.assertTrue(isElementPresent(selecBestButton));
+	}
+
+	/**
+	 * Assert Testimonial section with Testimonials is displayed below 'View Our
+	 * Package Options' section at at 'Sell your Trader fast, free & secure' page
+	 **/
+	public void assertTestimonialsectionwithTestimonials() {
+		print("Assert Testimonial section at Sell Motorcycle Page");
+		String testimonialSection = Locator.Sell.Testimonials_Section.value;
+		Assert.assertTrue(isElementPresent(testimonialSection));
+		print("Asset Three Testimonials under Assert Testimonial section at Sell Motorcycle Page");
+		String testimonialDescripation = Locator.Sell.Testimonials_Descripation.value;
+		Assert.assertTrue(isElementPresent(testimonialDescripation));
+	}
+
+	/** 
+	 * ================================================================================
+	 * Assert "Sold our motorcycle super quick and we're very happy!" page with all
+	 * testimonials are displayed when user click on Read More Customer reviews
+	 * button under testimonial section.
+	 * ================================================================================
+	 **/
+	public void clickonReadMoreCustomerReviewsUnderTestimonialsSection() {
+    print("Click on Read More Customer Reviews Button");
+    clickOn(Locator.Sell.ReadMoreCustomerReviews_Button.value);
+    waitForElementPresentInDom(1);
+    print ("Assert Sold our motorcycle super quick and we're very happy! at Testimonial Page");
+    String testimonialPage = Locator.Sell.Testimonial_Page.value;
+    Assert.assertTrue(isElementPresent(testimonialPage));
+    
+	}
+
+	
 }
