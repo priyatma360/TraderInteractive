@@ -113,7 +113,14 @@ public class Locator {
 		Updated_Changes_Messages("//*[@id='mytAccountForm']//p[contains(text(),'Updated')]"),
 		MyTrader_Info_Page("//*[@id='page-content-wrapper']//*[contains(text(),'MyTrader Information')]"),
 		My_Listings("//*[@class='myt-nav-container']//li/a[@title='My Listings']"),
-		My_Listings_Section("//*[@id='page-content-wrapper']//div[3]//a[contains(text(),'My Listings')]");
+		My_Listings_Section("//*[@id='page-content-wrapper']//div[3]//a[contains(text(),'My Listings')]"),
+		Ad_Links_MyListing("//*[@id='page-content-wrapper']/div[2]/div[3]/div/div[1]/ul/li"),
+		My_Listings_Heading_Count("(//*[@class='myt-column'])[1]/h3/a[1]"),
+		Posted_Ad_links("(//*[@class='list-unstyled'])[3]/li"),
+		My_Listing_Edit_Button("(//*[@class='myt-column'])[1]/h3/a[2]"),
+		Edit_Listing_Button("//*[contains(text(),'Edit Listings')]"),
+		Edit_Button("(//*[@class='list-unstyled'])[3]/li[1]/a/i");
+		
 		
 		public String value;
 

@@ -5,8 +5,8 @@
     <classes>
       <class name="com.trader.scripts.MyTrader">
         <methods>
+          <include name="assertMyListingsSection"/>
           <include name="tearDown"/>
-          <include name="assertSectionsAtMyTraderPage"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.trader.scripts.MyTrader -->

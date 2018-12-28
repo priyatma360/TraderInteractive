@@ -19,11 +19,11 @@ public class MyTrader extends DriverTestCase {
 }
 
 	/*
-	 * Test_02: Following links are displayed under 'My Trader' tab.
+	 * Test_02: Following links are displayed under 'My Trader' section.
 	 * 1. My Listings 2. Saved Listing 3. Saved Searches  4. Sell A Motorcycle 5. Account Settings
 	 */
 	@Test
-	public void assertMyTradertablinks() {
+	public void assertMyTraderSectionlinks() {
 		OpenURL();
 		loginHelper.loginToApplicaton();
 		traderMenus.clickOnMoreHamburgerButton();
@@ -52,9 +52,25 @@ public class MyTrader extends DriverTestCase {
 	}
 	
 	/*
+	 * Test_04:
 	 * Following links, buttons and icons are displayed under My Listings section at Welcome to MyTrader page.
 	 * 1. My Listings heading with Listing count 2. All posted Ad links for that account 3. Edit button 4. Edit icon 5. Edit Listing
 	 */
+	
+	@Test
+	public void assertMyListingsSection() {
+		
+		OpenURL();
+		loginHelper.loginToApplicaton();
+		traderMenus.clickOnMoreHamburgerButton();
+		traderMenus.clickOnMyTraderAccount();
+		myTraderHelper.assertMyListingsheadingwithListingcount();
+		myTraderHelper.assertpostedAdlinksforthataccount();
+		myTraderHelper.assertEditButtonwithMyListingHeading();
+		myTraderHelper.assertEditIcon();
+		myTraderHelper.assertEditListingButton();
+		
+	}
 	
 	
 }
