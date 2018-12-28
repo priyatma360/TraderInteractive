@@ -457,7 +457,10 @@ public class Locator {
 		Testimonials_Section("//*[@class='center sell-promo']//h2"),
 		Testimonials_Descripation("//*[@class='center sell-promo']//ul"),
 		ReadMoreCustomerReviews_Button("//a[contains(text(),'Read More Customer Reviews') and @class='btn btn-large btn-blank margin-top20']"),
-		Testimonial_Page("//*[@id='testimonialCont']//div//h1");
+		Testimonial_Page("//*[@id='testimonialCont']//div//h1"),
+		Add_Photos_Video("//div[@id='step2']//div//h4"),
+		Your_Listing_Summary("//div[@class='summary-affix affix']//div//h2"),
+		See_Preview_Link("(//*[contains(text(),' See Preview')])[1]");
 		
 		public String value;
 

@@ -70,5 +70,17 @@ public class PostListingPage extends DriverTestCase {
 		sellYourMotorcycleHelper.clickonReadMoreCustomerReviewsUnderTestimonialsSection();
 
 	}
-
+	/**Following section with fields, links and  buttons  are displayed at form when click on  'Select Free' button under 'View Our Package Options' section 
+    1. Enter Vehicle Info 2. Add Photos & Video 3. Your Listing Summary 4. Enter Promo Code 5. Checkout 6. See Preview 
+**/
+    @Test
+    
+  public void assertVehicleInfoAddPhotosVideoListingSummaryPromoCodeCheckoutSeePreviewAtCreateListing(){
+            OpenURL();
+            loginHelper.loginToApplicaton();
+            sellYourMotorcycleHelper.clickOnSellForFreeMenuAndAssertResultPage();
+            sellYourMotorcycleHelper.clickOnSelectFreeButton();
+            sellYourMotorcycleHelper.assertSellpage();
+            sellYourMotorcycleHelper.assertAddPhotosVideo();
+    }
 }

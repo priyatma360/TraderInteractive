@@ -439,6 +439,39 @@ public class SellYourMotorcycleHelper extends DriverHelper {
     Assert.assertTrue(isElementPresent(testimonialPage));
     
 	}
-
+	/** 
+     * ================================================================================
+     * Assert "Add Photos & Video" section at Create Listing Page
+     * ================================================================================
+     **/        
+    public void assertAddPhotosVideo()
+    {
+            print("Assert Add Photos & Video section");
+            String AddPhotosAndVideo = Locator.Sell.Add_Photos_Video.value;
+            Assert.assertTrue(isElementPresent(AddPhotosAndVideo));
+    }
+    
+	/** 
+    * ================================================================================
+    * Assert "Add Photos & Video" section at Create Listing Page
+    * ================================================================================
+    **/        
+   public void assetYourListingSummarySection()
+   {
+           print("Your Listing Summary section");
+           String ListingSummmary = Locator.Sell.Your_Listing_Summary.value;
+           Assert.assertTrue(isElementPresent(ListingSummmary));
+   }
+   /** 
+    * ================================================================================
+    * Assert "Add Photos & Video" section at Create Listing Page
+    * ================================================================================
+    **/        
+   public void assetCheckoutButton()
+   {
+           print("Your Listing Summary section");
+           String CheckoutButton = Locator.Sell.Checkout_Button.value;
+           Assert.assertTrue(isElementPresent(CheckoutButton));
+   }
 	
 }
