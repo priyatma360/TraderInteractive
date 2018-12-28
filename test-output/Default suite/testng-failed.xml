@@ -5,11 +5,9 @@
     <classes>
       <class name="com.trader.scripts.PostListingPage">
         <methods>
-          <include name="assertTestimonialsectionwithTestimonials"/>
+          <include name="assertVehicleInfoAddPhotosVideoListingSummaryPromoCodeCheckoutSeePreviewAtCreateListing"/>
           <include name="tearDown"/>
-          <include name="clickonReadMoreCustomerReviewsUnderTestimonialsSection"/>
           <include name="setUp"/>
-          <include name="clickonSellYourMotorcycleAndAssertSellYourMotorcycle"/>
         </methods>
       </class> <!-- com.trader.scripts.PostListingPage -->
     </classes>

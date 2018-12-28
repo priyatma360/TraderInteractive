@@ -411,6 +411,7 @@ public class SellYourMotorcycleHelper extends DriverHelper {
 	}
 
 	/**
+	 * 
 	 * Assert Testimonial section with Testimonials is displayed below 'View Our
 	 * Package Options' section at at 'Sell your Trader fast, free & secure' page
 	 **/
@@ -440,5 +441,50 @@ public class SellYourMotorcycleHelper extends DriverHelper {
     
 	}
 
+	/** 
+	 * ================================================================================
+	 * Assert "Add Photos & Video" section at Create Listing Page
+	 * ================================================================================
+	 **/	
+	public void assertAddPhotosVideo()
+	{
+		print("Assert Add Photos & Video section");
+		String addPhotosAndVideo = Locator.Sell.Add_Photos_Video.value;
+		Assert.assertTrue(isElementPresent(addPhotosAndVideo));
+	}
 	
+	/** 
+	 * ================================================================================
+	 * Assert "Add Photos & Video" section at Create Listing Page
+	 * ================================================================================
+	 **/	
+	public void assetYourListingSummarySection()
+	{
+		print("Your Listing Summary section");
+		String listingSummmary = Locator.Sell.Your_Listing_Summary.value;
+		Assert.assertTrue(isElementPresent(listingSummmary));
+	}
+	/** 
+	 * ================================================================================
+	 * Assert "Checkout" button at Create Listing Page
+	 * ================================================================================
+	 **/	
+	public void assetCheckoutButton()
+	{
+		print("Your Listing Summary section");
+		String checkoutButton = Locator.Sell.Checkout_Button.value;
+		Assert.assertTrue(isElementPresent(checkoutButton));
+	}
+	/** 
+	 * ================================================================================
+	 * Assert "See Preview" link at Create Listing Page
+	 * ================================================================================
+	 **/	
+	public void clickOnSeePreview()
+	{
+		print("Preview ");
+		clickOn(Locator.Sell.See_Preview_Link.value);
+		waitForElementPresentInDom(1);
+	   
+	}
 }

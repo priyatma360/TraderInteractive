@@ -88,7 +88,7 @@ public class LoginHelper extends DriverHelper {
 		this.enterEmailID(userName);
 		this.enterPassword(pwd);
 		this.clickOnSignInButton();
-		this.assertValidationMessage();
+	  //this.assertValidationMessage();
 	}
 
 	/**
