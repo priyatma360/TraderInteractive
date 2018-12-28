@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="112" total="113" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52063" started-at="2018-12-24T11:12:31Z" finished-at="2018-12-24T11:13:23Z">
+  <suite name="Default suite" duration-ms="65329" started-at="2018-12-28T10:30:54Z" finished-at="2018-12-28T10:31:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52063" started-at="2018-12-24T11:12:31Z" finished-at="2018-12-24T11:13:23Z">
-      <class name="com.trader.scripts.AdvancedSearchPage">
-        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.AdvancedSearchPage@dbd940d]" name="setUp" is-config="true" duration-ms="3778" started-at="2018-12-24T11:12:31Z" finished-at="2018-12-24T11:12:35Z">
+    <test name="Default test" duration-ms="65329" started-at="2018-12-28T10:30:54Z" finished-at="2018-12-28T10:31:59Z">
+      <class name="com.trader.scripts.MyTrader">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:com.trader.scripts.MyTrader@3439f68d]" name="setUp" is-config="true" duration-ms="7819" started-at="2018-12-28T10:30:54Z" finished-at="2018-12-28T10:31:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.trader.scripts.AdvancedSearchPage.followingRefinedOptionsUnderAdvancedSearchPage()]]>
+                <![CDATA[public void com.trader.scripts.MyTrader.assertMyListingsSection()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="followingRefinedOptionsUnderAdvancedSearchPage()[pri:0, instance:com.trader.scripts.AdvancedSearchPage@dbd940d]" name="followingRefinedOptionsUnderAdvancedSearchPage" duration-ms="47445" started-at="2018-12-24T11:12:35Z" finished-at="2018-12-24T11:13:22Z">
+        <test-method status="PASS" signature="assertMyListingsSection()[pri:0, instance:com.trader.scripts.MyTrader@3439f68d]" name="assertMyListingsSection" duration-ms="56617" started-at="2018-12-28T10:31:02Z" finished-at="2018-12-28T10:31:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- followingRefinedOptionsUnderAdvancedSearchPage -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.AdvancedSearchPage@dbd940d]" name="tearDown" is-config="true" duration-ms="810" started-at="2018-12-24T11:13:22Z" finished-at="2018-12-24T11:13:23Z">
+        </test-method> <!-- assertMyListingsSection -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.trader.scripts.MyTrader@3439f68d]" name="tearDown" is-config="true" duration-ms="876" started-at="2018-12-28T10:31:58Z" finished-at="2018-12-28T10:31:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=followingRefinedOptionsUnderAdvancedSearchPage status=SUCCESS method=AdvancedSearchPage.followingRefinedOptionsUnderAdvancedSearchPage()[pri:0, instance:com.trader.scripts.AdvancedSearchPage@dbd940d] output={null}]]]>
+                <![CDATA[[TestResult name=assertMyListingsSection status=SUCCESS method=MyTrader.assertMyListingsSection()[pri:0, instance:com.trader.scripts.MyTrader@3439f68d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.trader.scripts.AdvancedSearchPage -->
+      </class> <!-- com.trader.scripts.MyTrader -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

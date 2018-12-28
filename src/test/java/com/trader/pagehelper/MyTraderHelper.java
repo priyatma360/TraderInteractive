@@ -3,8 +3,11 @@ package com.trader.pagehelper;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import com.trader.locators.Locator;
@@ -179,9 +182,72 @@ public class MyTraderHelper extends DriverHelper {
 	}
 	
 	/**
-	 * Assert All posted Ad links for that Account.
+	 * Assert My Listings heading with Listing count.
 	 */
+	public void assertMyListingsheadingwithListingcount() {
+	print("Assert My Listings heading with Listing count");
+	locator = Locator.MyTrader.My_Listings_Heading_Count.value;
+    Assert.assertTrue(isElementPresent(locator));
+	}
 	
+	/**
+	 * Assert posted Ad links for that account.
+	 */
+	public void assertpostedAdlinksforthataccount() {
+	print("Assert posted Ad links for that account");
+	locator = Locator.MyTrader.Posted_Ad_links.value;
+    Assert.assertTrue(isElementPresent(locator));
+	}
+	
+	/**
+	 * Assert Edit Button with My Listing Heading .
+	 */
+	public void assertEditButtonwithMyListingHeading() {
+	print("Assert Edit Button with My Listing Heading");
+	locator = Locator.MyTrader.Posted_Ad_links.value;
+    Assert.assertTrue(isElementPresent(locator));
+    
+	}
+	
+	/**
+	 * Assert Edit Icon.
+	 */
+	public void assertEditIcon() {
+	print("Assert Edit Icon");
+	locator = Locator.MyTrader.Edit_Button.value;
+    Assert.assertTrue(isElementPresent(locator));
+	}
+	
+	/**
+	 * Assert Edit Listing Button.
+	 */
+	public void assertEditListingButton() {
+	print("Assert Edit Listing Button");
+	locator = Locator.MyTrader.Edit_Listing_Button.value;
+    Assert.assertTrue(isElementPresent(locator));
+	}
+	
+	/**
+	 * Assert All posted Ad links for that Account under My Listings.
+	 */
+	public void assertAllpostedAdlinks() {
+		
+		List<WebElement> links = getWebDriver().findElements(By.xpath("(//*[@class='list-unstyled'])[3]/li"));
+		 //System.out.println(links.size());
+		 for (int i = 0; i<=links.size(); i=i+1)
+		 {
+			 try {
+		 System.out.println(links.get(i).getText());
+		 
+			 } catch(IndexOutOfBoundsException e) {
+				 //System.out.println(e);
+	            }
+			 }
+		 
+		 }
+		
+		
+	}
 
 	
-}
+
